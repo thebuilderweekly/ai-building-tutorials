@@ -73,7 +73,9 @@ The same gate applies to in-house pipeline-generated entries and external contri
 
 ## Voice rules
 
-This corpus uses Builder Weekly's house voice. The important rules:
+The voice rules apply to **published tutorial prose**: `entries/**/tutorial.md` and the `soulLine`, `beforeState`, and `afterState` fields of each entry's `metadata.json`. They do not apply to contributor-facing documentation like `README.md`, `CONTRIBUTING.md`, `MERGE_GATE.md`, the pillar READMEs, or `llms.txt` — those are technical writing for developers and use standard conventions.
+
+When you are writing a tutorial that will be published, the important rules:
 
 **Use direct prose.**
 

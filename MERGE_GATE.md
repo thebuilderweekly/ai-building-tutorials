@@ -57,7 +57,9 @@ The check enforces difference by asserting the two strings share fewer than 60% 
 
 ### 4. Voice violation scan
 
-Every markdown file in the PR is scanned against a banned-phrase list. The banned list is identical to Builder Weekly's cross-publication voice rules and covers:
+**Scope:** the voice scan runs only on published tutorial prose. Specifically: `entries/**/tutorial.md` and the `soulLine`, `beforeState`, and `afterState` fields of each entry's `metadata.json`. Contributor-facing documentation (`README.md`, `CONTRIBUTING.md`, `MERGE_GATE.md`, pillar READMEs, `llms.txt`) is technical writing for developers and is not in scope. If you are editing those files, you can use em dashes and connecting phrases without failing the gate. The voice rules exist to keep published tutorials in Builder Weekly's house voice, not to police the contribution docs.
+
+Every in-scope file is scanned against a banned-phrase list. The banned list is identical to Builder Weekly's cross-publication voice rules and covers:
 
 - **Typography**: em dashes (`—`), en dashes (`–`), double hyphens (`--`)
 - **Scaffolding phrases**: "in conclusion", "it's worth noting", "furthermore", "moreover", "delve", "tapestry", "landscape", "realm", "myriad", "navigate the complexities"
