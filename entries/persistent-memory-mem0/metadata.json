@@ -1,0 +1,23 @@
+{
+  "id": "persistent-memory-mem0",
+  "title": "Give your agent memory that survives a restart",
+  "slug": "persistent-memory-mem0",
+  "pillar": "memory",
+  "clusterTags": [
+    "mem0",
+    "persistence",
+    "context-retrieval"
+  ],
+  "soulLine": "An agent with persistent memory improves its responses over time without retraining, which a human doing the same job would need a notebook and perfect recall to match.",
+  "beforeState": "Your agent forgets everything when the session ends and starts every conversation from zero.",
+  "afterState": "The agent retrieves relevant context from previous sessions before responding, getting better with every interaction.",
+  "status": "drafted",
+  "author": "builder-weekly-bot",
+  "contributors": [],
+  "tools": [
+    "mem0"
+  ],
+  "createdAt": "2026-04-11",
+  "lastVerifiedAt": "2026-04-11",
+  "freshnessWindowDays": 90
+}
