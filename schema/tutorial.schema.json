@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tutorial Entry",
+  "description": "Metadata for a Builder Weekly tutorial entry. One JSON file per entry, living at entries/{id}/metadata.json alongside the entry's tutorial.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "slug",
+    "pillar",
+    "clusterTags",
+    "soulLine",
+    "beforeState",
+    "afterState",
+    "status",
+    "author",
+    "createdAt",
+    "lastVerifiedAt"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "Unique identifier, lowercase kebab-case. Example: accountability-loop."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 120,
+      "description": "Human-readable title. Declarative statement, not a question. No marketing words."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "URL-safe slug. Usually identical to id but kept as a separate field so the two can diverge if needed."
+    },
+    "pillar": {
+      "type": "string",
+      "enum": [
+        "accountability",
+        "memory",
+        "visibility",
+        "agent-teams",
+        "scoping",
+        "operational"
+      ],
+      "description": "Parent pillar this entry belongs to. Operational is the catch-all for entries that don't fit a single pillar."
+    },
+    "clusterTags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+      },
+      "minItems": 1,
+      "description": "Cluster tags within the pillar. Lowercase kebab-case. Used for cross-entry navigation on the site."
+    },
+    "soulLine": {
+      "type": "string",
+      "minLength": 20,
+      "description": "One sentence naming explicitly why an agent beats a human at this task. No hedges, no generalities. Must reference a specific measurable advantage (speed, recall, consistency, cost, availability)."
+    },
+    "beforeState": {
+      "type": "string",
+      "minLength": 20,
+      "description": "What the task looks like without the agent. Concrete enough that a reader recognizes their own workflow in it."
+    },
+    "afterState": {
+      "type": "string",
+      "minLength": 20,
+      "description": "What the task looks like with the agent. Concrete enough that a reader can evaluate whether the trade-off is worth it for them."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "queued",
+        "drafted",
+        "verified",
+        "published",
+        "stale"
+      ],
+      "description": "Current lifecycle status. queued: in topics.json, no entry yet. drafted: entry exists, hasn't passed verifier. verified: passed all automated checks, pending human review. published: live on the site. stale: freshness window elapsed, needs re-verification."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "GitHub username of the original author. For pipeline-generated entries, the engine's dedicated bot account."
+    },
+    "contributors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "GitHub usernames of contributors whose PRs against this entry landed after the original."
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tools used in the tutorial. Every tool must be in Builder Weekly's Agent Index (github.com/thebuilderweekly/the-agent-index) or in the well-known allowlist enforced by the merge gate."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date (YYYY-MM-DD) when the entry was first created."
+    },
+    "lastVerifiedAt": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date (YYYY-MM-DD) when the entry last passed the verifier. Advances on every re-verification run."
+    },
+    "freshnessWindowDays": {
+      "type": "integer",
+      "minimum": 7,
+      "maximum": 365,
+      "default": 90,
+      "description": "Days from lastVerifiedAt before the entry is flagged as stale and scheduled for re-verification."
+    }
+  }
+}

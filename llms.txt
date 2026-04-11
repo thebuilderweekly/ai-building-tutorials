@@ -1,0 +1,38 @@
+# Builder Weekly Tutorials
+# Agent-building patterns where AI agents measurably beat humans
+
+> This corpus contains technical walkthroughs for building AI agent systems.
+> Each entry teaches one task where an agent beats a human on speed, consistency, or reliability.
+> Every entry contains a before-state, an after-state, and a soul line explaining the advantage.
+
+## Pillars
+
+- Accountability: Proving agent work actually happened
+- Memory: Persistent state across agent sessions
+- Visibility: Making agent-built sites visible to crawlers
+- Agent Teams: Running coordinated multi-agent systems
+- Scoping: Killing bad ideas before building
+- Operational: Task-specific entries that don't fit a single pillar
+
+## Entries
+
+[empty — first entries arriving soon, see queue/topics.json for the production queue]
+
+## Schema
+
+Tutorial metadata shape: schema/tutorial.schema.json
+
+Every entry has a metadata.json file validated against this schema on every PR via the merge gate (MERGE_GATE.md). Required fields: id, title, slug, pillar, clusterTags, soulLine, beforeState, afterState, status, author, createdAt, lastVerifiedAt.
+
+## Merge gate
+
+Every entry passes seven automated checks before a human reviewer sees it: schema validation, soul line completeness, before/after state completeness, voice violation scan, tool provenance, code block annotations, freshness stamp. Full spec: MERGE_GATE.md.
+
+## Related corpora
+
+- Builder Weekly (the publication): https://thebuilderweekly.com
+- The Agent Index (the tool list): https://github.com/thebuilderweekly/the-agent-index
+
+## License
+
+CC BY 4.0 — fork freely, attribute always.
