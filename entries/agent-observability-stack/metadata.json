@@ -12,7 +12,7 @@
   "soulLine": "An agent without observability is a black box; an agent with structured logs, traces, and per-step latency metrics tells you exactly where it failed and why, before the user noticed.",
   "beforeState": "Your agent failed last night and you have no idea where in its 12-step workflow it broke. You're rerunning it manually with print statements to find out.",
   "afterState": "The agent emits structured events at every step. You query the trace, see the exact failure, and ship a fix in minutes instead of hours.",
-  "status": "drafted",
+  "status": "published",
   "author": "builder-weekly-bot",
   "contributors": [],
   "tools": [
