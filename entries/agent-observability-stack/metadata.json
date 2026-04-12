@@ -13,7 +13,7 @@
   "beforeState": "Your agent failed last night and you have no idea where in its 12-step workflow it broke. You're rerunning it manually with print statements to find out.",
   "afterState": "The agent emits structured events at every step. You query the trace, see the exact failure, and ship a fix in minutes instead of hours.",
   "status": "published",
-  "author": "builder-weekly-bot",
+  "author": "tbw-ai",
   "contributors": [],
   "tools": [
     "anthropic-api"
