@@ -11,7 +11,7 @@
   "soulLine": "A naive image generation agent produces 100 mediocre images at $5 total cost; a properly-prompted agent with output verification produces 10 great images at the same cost.",
   "beforeState": "Your agent generates images for every blog post but most of them are bad. You're paying for hundreds of generations to get a few usable results.",
   "afterState": "The agent uses a structured prompt template, generates with controlled variations, runs each output through a quick quality check, and only keeps results that pass.",
-  "status": "drafted",
+  "status": "published",
   "author": "builder-weekly-bot",
   "contributors": [],
   "tools": [
