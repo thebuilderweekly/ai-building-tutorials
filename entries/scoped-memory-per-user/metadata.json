@@ -1,0 +1,23 @@
+{
+  "id": "scoped-memory-per-user",
+  "title": "Scope agent memory per user without leaking across sessions",
+  "slug": "scoped-memory-per-user",
+  "pillar": "memory",
+  "clusterTags": [
+    "mem0",
+    "isolation",
+    "multi-tenant"
+  ],
+  "soulLine": "An agent can index and retrieve against millions of per-user memory stores in parallel, which a human operating the same product would need a team and a custom dashboard to match.",
+  "beforeState": "Your agent's memory is a single global store and one user's context bleeds into another user's responses.",
+  "afterState": "Every memory write is namespaced to a user id, and retrieval only sees the requesting user's own history.",
+  "status": "drafted",
+  "author": "builder-weekly-bot",
+  "contributors": [],
+  "tools": [
+    "mem0"
+  ],
+  "createdAt": "2026-04-12",
+  "lastVerifiedAt": "2026-04-12",
+  "freshnessWindowDays": 90
+}
