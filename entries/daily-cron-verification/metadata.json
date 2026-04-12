@@ -1,0 +1,23 @@
+{
+  "id": "daily-cron-verification",
+  "title": "Verify every scheduled job actually ran",
+  "slug": "daily-cron-verification",
+  "pillar": "accountability",
+  "clusterTags": [
+    "cueapi",
+    "cron",
+    "job-verification"
+  ],
+  "soulLine": "An agent can check a hundred cron outcomes per second against expected state, which a human doing daily ops review does in thirty minutes and misses silently.",
+  "beforeState": "You have ten cron jobs, each firing daily. When one fails silently you notice a week later when a customer emails.",
+  "afterState": "An agent reads every cron run's outcome, compares it to expected state, and surfaces the failures within seconds of the scheduled fire time.",
+  "status": "drafted",
+  "author": "builder-weekly-bot",
+  "contributors": [],
+  "tools": [
+    "cueapi"
+  ],
+  "createdAt": "2026-04-12",
+  "lastVerifiedAt": "2026-04-12",
+  "freshnessWindowDays": 90
+}
