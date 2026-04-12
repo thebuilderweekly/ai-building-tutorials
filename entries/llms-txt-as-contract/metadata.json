@@ -12,7 +12,7 @@
   "beforeState": "An AI crawler visiting your site sees hundreds of pages with no hint about which ones matter or how they relate.",
   "afterState": "The crawler reads llms.txt, gets a guided tour of your corpus, and indexes the pages that matter in the order you chose.",
   "status": "published",
-  "author": "builder-weekly-bot",
+  "author": "tbw-ai",
   "contributors": [],
   "tools": [],
   "createdAt": "2026-04-12",
