@@ -12,7 +12,7 @@
   "beforeState": "You have a hundred RSS feeds producing five hundred items a day. Reading them takes two hours. You stop reading them.",
   "afterState": "Every morning the agent delivers fifteen items that match your editorial criteria, ranked by predicted signal strength.",
   "status": "published",
-  "author": "builder-weekly-bot",
+  "author": "tbw-ai",
   "contributors": [],
   "tools": [
     "anthropic-api"
