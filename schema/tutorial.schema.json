@@ -120,6 +120,10 @@
       "maximum": 365,
       "default": 90,
       "description": "Days from lastVerifiedAt before the entry is flagged as stale and scheduled for re-verification."
+    },
+    "pinAsTrending": {
+      "type": "boolean",
+      "description": "When true, this entry is pinned to the homepage tutorials column regardless of diversity selection. Optional, default false."
     }
   }
 }
