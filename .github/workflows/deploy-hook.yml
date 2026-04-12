@@ -1,5 +1,17 @@
 name: Trigger Builder Weekly rebuild
 
+# Phase 9.8 — Force a Vercel rebuild of builder-weekly-v2 on every
+# push to main in this repo. Replaces the Phase 11D deploy hook flow,
+# which silently deduped jobs when builder-weekly-v2's main HEAD
+# hadn't changed (a fatal flaw for a build that fetches upstream
+# content from other repos). The /v13/deployments?forceNew=1 API
+# bypasses the dedup and forces a new deployment regardless of
+# commit SHA.
+#
+# Secrets required on this repo:
+#   VERCEL_TOKEN — Vercel user token with deploy permission on the
+#                  builder-weekly-v2 project.
+
 on:
   push:
     branches:
@@ -9,12 +21,24 @@ jobs:
   trigger-rebuild:
     runs-on: ubuntu-latest
     steps:
-      - name: Fire Vercel deploy hook
+      - name: Force-redeploy Builder Weekly via Vercel API
         env:
-          DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          if [ -z "$DEPLOY_HOOK_URL" ]; then
-            echo "VERCEL_DEPLOY_HOOK_URL secret not set, skipping rebuild"
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN secret not set, skipping rebuild"
             exit 0
           fi
-          curl -X POST "$DEPLOY_HOOK_URL"
+          echo "Firing force-new deployment on builder-weekly-v2..."
+          RESPONSE=$(curl -sS -X POST \
+            -H "Authorization: Bearer $VERCEL_TOKEN" \
+            -H "Content-Type: application/json" \
+            "https://api.vercel.com/v13/deployments?forceNew=1&teamId=team_fxpKzitsCAmBuUlW2k7buFWp" \
+            -d '{"name":"builder-weekly-v2","project":"prj_HO6lyKSCrUstyd9AtAsR3YsPcvQH","target":"production","gitSource":{"type":"github","repoId":1208110770,"ref":"main"}}')
+          echo "Vercel response: $RESPONSE"
+          if ! echo "$RESPONSE" | grep -q '"id"'; then
+            echo "ERROR: deployment creation failed - no id in response"
+            exit 1
+          fi
+          DEPLOYMENT_ID=$(echo "$RESPONSE" | grep -o '"id":"[^"]*"' | head -1 | cut -d'"' -f4)
+          echo "Created deployment: $DEPLOYMENT_ID"
