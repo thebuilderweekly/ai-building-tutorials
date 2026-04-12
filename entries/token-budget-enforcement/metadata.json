@@ -12,7 +12,7 @@
   "beforeState": "Your agent hits an edge case that puts it in a retry loop. By morning you have a thousand-dollar Anthropic invoice and an angry email from your CFO.",
   "afterState": "The agent tracks cumulative spend per session and per day, throttles when approaching limits, switches to cheaper models when over thresholds, and stops entirely before damaging your bill.",
   "status": "published",
-  "author": "builder-weekly-bot",
+  "author": "tbw-ai",
   "contributors": [],
   "tools": [
     "anthropic-api"
