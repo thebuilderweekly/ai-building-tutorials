@@ -11,7 +11,7 @@
   "soulLine": "An agent looping on a malformed input can burn through a month's API budget in 20 minutes; a budget-enforced agent stops itself before the bill arrives.",
   "beforeState": "Your agent hits an edge case that puts it in a retry loop. By morning you have a thousand-dollar Anthropic invoice and an angry email from your CFO.",
   "afterState": "The agent tracks cumulative spend per session and per day, throttles when approaching limits, switches to cheaper models when over thresholds, and stops entirely before damaging your bill.",
-  "status": "drafted",
+  "status": "published",
   "author": "builder-weekly-bot",
   "contributors": [],
   "tools": [
