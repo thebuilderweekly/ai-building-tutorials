@@ -1,0 +1,31 @@
+name: Trigger tbw-ai PR review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'entries/**'
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    if: vars.SITE_URL != ''
+    steps:
+      - name: Trigger review pipeline
+        run: |
+          RESP=$(curl -s -w "
+%{http_code}" -X POST \
+            "${{ vars.SITE_URL }}/api/cues/review-tutorial-pr" \
+            -H "Content-Type: application/json" \
+            -d "{\"prNumber\": ${{ github.event.pull_request.number }}}")
+          
+          HTTP_CODE=$(echo "$RESP" | tail -1)
+          BODY=$(echo "$RESP" | head -n -1)
+          
+          echo "HTTP Status: $HTTP_CODE"
+          echo "Response: $BODY"
+          
+          if [ "$HTTP_CODE" -ge 400 ]; then
+            echo "::error::Review pipeline returned HTTP $HTTP_CODE"
+            exit 1
+          fi
