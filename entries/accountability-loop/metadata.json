@@ -1,0 +1,23 @@
+{
+  "id": "accountability-loop",
+  "title": "Build an accountability loop for your AI agent",
+  "slug": "accountability-loop",
+  "pillar": "accountability",
+  "clusterTags": [
+    "cueapi",
+    "verification",
+    "outcome-tracking"
+  ],
+  "soulLine": "An agent can verify its own work at machine speed across hundreds of tasks simultaneously, which no human can do without a dashboard and hours of spot-checking.",
+  "beforeState": "Your agent says it sent the email but you have no proof it actually did.",
+  "afterState": "CueAPI has timestamped evidence the email was delivered, with the delivery receipt as the external_id.",
+  "status": "drafted",
+  "author": "builder-weekly-bot",
+  "contributors": [],
+  "tools": [
+    "cueapi"
+  ],
+  "createdAt": "2026-04-11",
+  "lastVerifiedAt": "2026-04-11",
+  "freshnessWindowDays": 90
+}
