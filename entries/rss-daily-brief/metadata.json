@@ -11,13 +11,13 @@
   "soulLine": "An agent applies a consistent editorial filter to thousands of items per day, which a human trying to maintain the same signal-to-noise ratio would spend two hours on and still miss things.",
   "beforeState": "You have a hundred RSS feeds producing five hundred items a day. Reading them takes two hours. You stop reading them.",
   "afterState": "Every morning the agent delivers fifteen items that match your editorial criteria, ranked by predicted signal strength.",
-  "status": "drafted",
+  "status": "published",
   "author": "builder-weekly-bot",
   "contributors": [],
   "tools": [
     "anthropic-api"
   ],
   "createdAt": "2026-04-11",
-  "lastVerifiedAt": "2026-04-11",
+  "lastVerifiedAt": "2026-04-12",
   "freshnessWindowDays": 90
 }
