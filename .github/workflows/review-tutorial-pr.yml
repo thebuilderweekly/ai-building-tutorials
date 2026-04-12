@@ -6,16 +6,18 @@ on:
     paths:
       - 'entries/**'
 
+env:
+  REVIEW_URL: https://thebuilderweekly.com/api/cues/review-tutorial-pr
+
 jobs:
   review:
     runs-on: ubuntu-latest
-    if: vars.SITE_URL != ''
     steps:
       - name: Trigger review pipeline
         run: |
           RESP=$(curl -s -w "
 %{http_code}" -X POST \
-            "${{ vars.SITE_URL }}/api/cues/review-tutorial-pr" \
+            "$REVIEW_URL" \
             -H "Content-Type: application/json" \
             -d "{\"prNumber\": ${{ github.event.pull_request.number }}}")
           
