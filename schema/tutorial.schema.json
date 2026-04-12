@@ -43,7 +43,10 @@
         "visibility",
         "agent-teams",
         "scoping",
-        "operational"
+        "operational",
+        "payments",
+        "foundations",
+        "communication"
       ],
       "description": "Parent pillar this entry belongs to. Operational is the catch-all for entries that don't fit a single pillar."
     },
@@ -89,12 +92,16 @@
     },
     "contributors": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "GitHub usernames of contributors whose PRs against this entry landed after the original."
     },
     "tools": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Tools used in the tutorial. Every tool must be in Builder Weekly's Agent Index (github.com/thebuilderweekly/the-agent-index) or in the well-known allowlist enforced by the merge gate."
     },
     "createdAt": {
