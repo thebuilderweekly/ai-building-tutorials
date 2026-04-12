@@ -11,7 +11,7 @@
   "soulLine": "An agent can check a hundred cron outcomes per second against expected state, which a human doing daily ops review does in thirty minutes and misses silently.",
   "beforeState": "You have ten cron jobs, each firing daily. When one fails silently you notice a week later when a customer emails.",
   "afterState": "An agent reads every cron run's outcome, compares it to expected state, and surfaces the failures within seconds of the scheduled fire time.",
-  "status": "drafted",
+  "status": "published",
   "author": "builder-weekly-bot",
   "contributors": [],
   "tools": [
