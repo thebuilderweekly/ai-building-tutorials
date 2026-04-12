@@ -1,0 +1,21 @@
+{
+  "id": "llms-txt-as-contract",
+  "title": "Ship an llms.txt that tells agents what your site is",
+  "slug": "llms-txt-as-contract",
+  "pillar": "visibility",
+  "clusterTags": [
+    "llms-txt",
+    "crawlers",
+    "agent-readable"
+  ],
+  "soulLine": "An agent that reads a well-structured llms.txt picks up your entire corpus in one pass, which a human writing documentation by hand would take months to make this legible.",
+  "beforeState": "An AI crawler visiting your site sees hundreds of pages with no hint about which ones matter or how they relate.",
+  "afterState": "The crawler reads llms.txt, gets a guided tour of your corpus, and indexes the pages that matter in the order you chose.",
+  "status": "drafted",
+  "author": "builder-weekly-bot",
+  "contributors": [],
+  "tools": [],
+  "createdAt": "2026-04-12",
+  "lastVerifiedAt": "2026-04-12",
+  "freshnessWindowDays": 90
+}
