@@ -12,7 +12,7 @@
   "beforeState": "Your agent runs a 10-step workflow end-to-end. Step 7 makes a wrong call. You don't notice until step 10 produces something embarrassing or expensive.",
   "afterState": "The workflow pauses at the steps where a wrong call would be costly, presents its decision to you for approval, and only proceeds after you confirm or correct.",
   "status": "published",
-  "author": "builder-weekly-bot",
+  "author": "tbw-ai",
   "contributors": [],
   "tools": [
     "cueapi",
