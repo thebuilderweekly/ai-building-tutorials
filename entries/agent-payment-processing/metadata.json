@@ -1,0 +1,24 @@
+{
+  "id": "agent-payment-processing",
+  "title": "Process payments from your AI agent without losing money to retries",
+  "slug": "agent-payment-processing",
+  "pillar": "payments",
+  "clusterTags": [
+    "stripe",
+    "idempotency",
+    "webhooks"
+  ],
+  "soulLine": "An agent retrying a charge without idempotency keys has charged the same customer 47 times before a human noticed; with proper idempotency the same agent can safely retry indefinitely.",
+  "beforeState": "Your agent triggers a charge, gets a network timeout, retries, and now your customer is charged twice. You discover this through a chargeback notice three days later.",
+  "afterState": "The agent retries any failed charge as many times as it wants, with idempotency keys ensuring each logical payment results in exactly one actual charge regardless of network conditions.",
+  "status": "drafted",
+  "author": "builder-weekly-bot",
+  "contributors": [],
+  "tools": [
+    "stripe",
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-12",
+  "lastVerifiedAt": "2026-04-12",
+  "freshnessWindowDays": 90
+}
