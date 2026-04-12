@@ -12,7 +12,7 @@
   "beforeState": "Your agent says it sent the email but you have no proof it actually did.",
   "afterState": "CueAPI has timestamped evidence the email was delivered, with the delivery receipt as the external_id.",
   "status": "published",
-  "author": "builder-weekly-bot",
+  "author": "tbw-ai",
   "contributors": [],
   "tools": [
     "cueapi"
