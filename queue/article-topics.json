@@ -14,9 +14,10 @@
       "title": "Who is an AI builder?",
       "editorialPillar": "building",
       "priority": 2,
-      "status": "queued",
+      "status": "published",
       "canonicalQuestion": "What kind of person becomes an AI builder?",
-      "assignedTo": null
+      "assignedTo": "govindkavaturi-art",
+      "publishedAt": "2026-04-12"
     },
     {
       "id": "end-of-subsidized-ai-economics",
