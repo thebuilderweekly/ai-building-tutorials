@@ -1,0 +1,23 @@
+{
+  "id": "research-agent-team",
+  "title": "Build a research agent team where one agent finds, one verifies, one summarizes",
+  "slug": "research-agent-team",
+  "pillar": "agent-teams",
+  "clusterTags": [
+    "anthropic-api",
+    "specialization",
+    "typed-handoffs"
+  ],
+  "soulLine": "Three specialized agents working in sequence produce verified research in five minutes; one generalist agent doing all three jobs takes twenty minutes and produces ungrounded claims.",
+  "beforeState": "You ask one agent to research a topic and it returns a confident summary mixing real facts, half-remembered training data, and outright fabrications, with no way to tell which is which.",
+  "afterState": "Three specialized agents run in sequence. The Researcher fetches primary sources. The Verifier checks every claim against those sources. The Summarizer writes only what survived verification.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-14",
+  "lastVerifiedAt": "2026-04-14",
+  "freshnessWindowDays": 90
+}
