@@ -1,0 +1,23 @@
+{
+  "id": "schema-validated-output",
+  "title": "Force structured agent output with JSON schema validation and retry",
+  "slug": "schema-validated-output",
+  "pillar": "scoping",
+  "clusterTags": [
+    "anthropic-api",
+    "json-schema",
+    "validation"
+  ],
+  "soulLine": "An agent with strict schema validation retries until it produces valid output, which a human reviewing free-form output would catch by reading every response and re-prompting manually.",
+  "beforeState": "Your agent returns prose when you need structured data. You add a JSON parser. The parser fails twenty percent of the time on missing fields, extra commas, or hallucinated keys.",
+  "afterState": "Every agent response is validated against a JSON schema. Invalid responses trigger an automatic retry with the schema and the validation error appended to the prompt. The agent converges to valid output every time.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-14",
+  "lastVerifiedAt": "2026-04-14",
+  "freshnessWindowDays": 90
+}
