@@ -1,0 +1,24 @@
+{
+  "id": "dynamic-og-images",
+  "title": "Generate dynamic OG images so your content gets clicked when shared",
+  "slug": "dynamic-og-images",
+  "pillar": "visibility",
+  "clusterTags": [
+    "nextjs",
+    "vercel-og",
+    "social"
+  ],
+  "soulLine": "An agent generates a unique OG image per page in milliseconds, which a human designing them by hand would need a graphic design tool and an hour per piece.",
+  "beforeState": "Every link your site shares on Twitter, LinkedIn, or Slack uses the same generic site logo. Click-through rates from social are flat. You know good cards drive clicks but you do not have time to design one per post.",
+  "afterState": "Every page on your site has a unique, branded OG image generated at build time. The cards include the page title, content type, and date. Social click-through rates climb because each share looks specific and intentional.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "nextjs",
+    "vercel-og"
+  ],
+  "createdAt": "2026-04-14",
+  "lastVerifiedAt": "2026-04-14",
+  "freshnessWindowDays": 90
+}
