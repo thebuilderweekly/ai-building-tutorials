@@ -1,0 +1,23 @@
+{
+  "id": "intent-routing-agent-team",
+  "title": "Route customer queries to specialized agents based on intent classification",
+  "slug": "intent-routing-agent-team",
+  "pillar": "agent-teams",
+  "clusterTags": [
+    "anthropic-api",
+    "routing",
+    "specialization"
+  ],
+  "soulLine": "A router that dispatches to five specialists handles a thousand customer queries per hour with consistent expertise per category, which a single generalist agent handles slower and worse.",
+  "beforeState": "Your support agent answers every kind of question with the same generalist tone. Billing questions get vague refund policies. Technical questions get product marketing. Customers escalate to humans for clarity.",
+  "afterState": "A router classifies every incoming query and dispatches it to a specialist agent with the right tools, knowledge scope, and tone. Billing questions get billing-trained responses. Technical questions get debugging-trained responses.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-14",
+  "lastVerifiedAt": "2026-04-14",
+  "freshnessWindowDays": 90
+}
