@@ -1,0 +1,24 @@
+{
+  "id": "context-aware-slack-notifications",
+  "title": "Send context-aware Slack notifications that get noticed instead of muted",
+  "slug": "context-aware-slack-notifications",
+  "pillar": "communication",
+  "clusterTags": [
+    "slack-api",
+    "anthropic-api",
+    "notifications"
+  ],
+  "soulLine": "An agent that calibrates notification urgency per event reaches the right person at the right time with eighty percent lower mute rate than a fixed-rule notification system.",
+  "beforeState": "Your monitoring system posts every event to a Slack channel. The channel fires fifty times a day. Your team muted it three weeks ago. Now critical alerts go unread.",
+  "afterState": "An agent classifies each event by severity, audience, and timeliness. Critical events DM the on-call engineer. Medium events post to a channel. Low events batch into an hourly digest. Mute rates collapse.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "slack-api",
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-14",
+  "lastVerifiedAt": "2026-04-14",
+  "freshnessWindowDays": 90
+}
