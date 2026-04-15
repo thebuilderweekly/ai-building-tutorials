@@ -1,0 +1,23 @@
+{
+  "id": "tool-allowlist-per-task",
+  "title": "Constrain agent tool access with per-task allowlists",
+  "slug": "tool-allowlist-per-task",
+  "pillar": "scoping",
+  "clusterTags": [
+    "anthropic-api",
+    "tools",
+    "constraints"
+  ],
+  "soulLine": "An agent with fifty tools available picks the wrong one twelve percent of the time; an agent with five tools scoped to its current task picks correctly ninety-nine percent of the time.",
+  "beforeState": "Your agent has access to every tool in your codebase. When asked to send an email, it sometimes calls the database directly. When asked to read data, it sometimes attempts to write. The error rate climbs as the tool surface grows.",
+  "afterState": "Each task type declares which tools it is allowed to use. The agent loads only those tools at runtime. Tool selection errors drop to near zero because the wrong tool is not in the menu.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-14",
+  "lastVerifiedAt": "2026-04-14",
+  "freshnessWindowDays": 90
+}
