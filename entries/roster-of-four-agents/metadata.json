@@ -11,7 +11,7 @@
   "soulLine": "An agent team with well-defined handoffs produces the same multi-step result end-to-end in one minute that a four-person human team takes a full meeting to coordinate, and the agent team doesn't need a meeting.",
   "beforeState": "You tried to chain four agents together and the output of each one contaminated the input of the next until the final agent produced garbage.",
   "afterState": "Four agents run in a defined sequence with typed handoffs, each stage produces verifiable intermediate output, and you can inspect any stage independently if the final result looks wrong.",
-  "status": "drafted",
+  "status": "published",
   "author": "tbw-ai",
   "contributors": [],
   "tools": [
