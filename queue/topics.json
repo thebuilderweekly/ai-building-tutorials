@@ -299,7 +299,7 @@
       "agent-specialization"
     ],
     "priority": 17,
-    "status": "queued",
+    "status": "published",
     "soulLine": "An agent with a well-scoped role-specific system prompt produces deterministically specialized output on every call, where a human generalist switching between roles loses context and degrades over the day.",
     "beforeState": "You have one generic agent handling researcher, writer, and editor roles, and the output reads like all three are fighting for the keyboard.",
     "afterState": "Three role-specific agents each produce their specialized output, the composition is clean, and changing any one prompt doesn't corrupt the others.",

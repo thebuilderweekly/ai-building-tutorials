@@ -1,0 +1,23 @@
+{
+  "id": "role-specific-system-prompts",
+  "title": "Author role-specific system prompts that actually change behavior",
+  "slug": "role-specific-system-prompts",
+  "pillar": "agent-teams",
+  "clusterTags": [
+    "system-prompts",
+    "roles",
+    "agent-specialization"
+  ],
+  "soulLine": "An agent with a well-scoped role-specific system prompt produces deterministically specialized output on every call, where a human generalist switching between roles loses context and degrades over the day.",
+  "beforeState": "You have one generic agent handling researcher, writer, and editor roles, and the output reads like all three are fighting for the keyboard.",
+  "afterState": "Three role-specific agents each produce their specialized output, the composition is clean, and changing any one prompt doesn't corrupt the others.",
+  "status": "drafted",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-04-29",
+  "lastVerifiedAt": "2026-04-29",
+  "freshnessWindowDays": 90
+}
