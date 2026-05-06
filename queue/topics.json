@@ -336,7 +336,7 @@
       "async"
     ],
     "priority": 19,
-    "status": "queued",
+    "status": "published",
     "soulLine": "A message-bus-coordinated agent system handles stage failures, retries, and back-pressure correctly on every single run, where a human wiring the same coordination by hand would cut corners on the retry logic and regret it in production.",
     "beforeState": "Your agents talk to each other through nested function calls. One stage's failure cascades through the stack and you lose state.",
     "afterState": "Every agent publishes its output to a bus, every consumer subscribes to what it needs, and failures in one agent don't corrupt state in another.",

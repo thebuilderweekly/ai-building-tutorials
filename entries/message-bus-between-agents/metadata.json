@@ -1,0 +1,25 @@
+{
+  "id": "message-bus-between-agents",
+  "title": "Wire agents together with a message bus instead of function calls",
+  "slug": "message-bus-between-agents",
+  "pillar": "agent-teams",
+  "clusterTags": [
+    "message-bus",
+    "coordination",
+    "async",
+    "inngest"
+  ],
+  "soulLine": "A message-bus-coordinated agent system handles stage failures, retries, and back-pressure correctly on every single run, where a human wiring the same coordination by hand would cut corners on the retry logic and regret it in production.",
+  "beforeState": "Your agents talk to each other through nested function calls. One stage's failure cascades through the stack and you lose state.",
+  "afterState": "Every agent publishes its output to a bus, every consumer subscribes to what it needs, and failures in one agent don't corrupt state in another.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "inngest",
+    "anthropic-api"
+  ],
+  "createdAt": "2026-05-06",
+  "lastVerifiedAt": "2026-05-06",
+  "freshnessWindowDays": 90
+}
