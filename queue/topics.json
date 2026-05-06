@@ -242,7 +242,7 @@
       "metadata-filters"
     ],
     "priority": 14,
-    "status": "queued",
+    "status": "published",
     "soulLine": "An agent combining semantic search with metadata filters reaches into ten million chunks and returns the right one in under a hundred milliseconds, which a human searching a SQL database by hand cannot come close to matching.",
     "beforeState": "Your agent's retrieval returns ten loosely relevant chunks because pure semantic search can't tell which belong to which user or which date range.",
     "afterState": "The same retrieval with metadata filters returns one chunk, it's the right one, and the latency is identical.",
