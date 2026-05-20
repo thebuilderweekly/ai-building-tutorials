@@ -45,7 +45,8 @@
       "deepgram"
     ],
     "priority": 3,
-    "status": "queued",
+    "status": "published",
+    "publishedAt": "2026-05-20",
     "soulLine": "An agent processes audio at 40x real-time speed with consistent extraction recall, which a human transcriber cannot match without multiple listens.",
     "beforeState": "You listen to a 20-minute meeting recording and manually write down action items, missing half of them.",
     "afterState": "The agent extracts structured tasks with owners, deadlines, and priorities in 30 seconds with near-complete recall.",
@@ -116,7 +117,8 @@
       "backlog"
     ],
     "priority": 7,
-    "status": "queued",
+    "status": "published",
+    "publishedAt": "2026-05-20",
     "soulLine": "An agent reads, classifies, and labels a thousand issues per hour with deterministic rules, which a human maintainer gets through maybe thirty before burning out.",
     "beforeState": "Your open-source repo has four hundred stale issues, no labels, and no routing. New contributors bounce off the chaos.",
     "afterState": "Every issue has an accurate label, a priority, and a next-action, applied by an agent that ran once against the backlog and then once per new issue.",

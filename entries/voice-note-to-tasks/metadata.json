@@ -1,0 +1,24 @@
+{
+  "id": "voice-note-to-tasks",
+  "title": "Turn a voice note into structured tasks in 30 seconds",
+  "slug": "voice-note-to-tasks",
+  "pillar": "operational",
+  "clusterTags": [
+    "transcription",
+    "task-extraction",
+    "deepgram"
+  ],
+  "soulLine": "An agent processes audio at 40x real-time speed with consistent extraction recall, which a human transcriber cannot match without multiple listens.",
+  "beforeState": "You listen to a 20-minute meeting recording and manually write down action items, missing half of them.",
+  "afterState": "The agent extracts structured tasks with owners, deadlines, and priorities in 30 seconds with near-complete recall.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "deepgram",
+    "anthropic-api"
+  ],
+  "createdAt": "2026-05-20",
+  "lastVerifiedAt": "2026-05-20",
+  "freshnessWindowDays": 90
+}
