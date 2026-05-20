@@ -1,0 +1,23 @@
+{
+  "id": "github-issue-triage",
+  "title": "Triage a GitHub issue backlog overnight",
+  "slug": "github-issue-triage",
+  "pillar": "operational",
+  "clusterTags": [
+    "github-api",
+    "classification",
+    "backlog"
+  ],
+  "soulLine": "An agent reads, classifies, and labels a thousand issues per hour with deterministic rules, which a human maintainer gets through maybe thirty before burning out.",
+  "beforeState": "Your open-source repo has four hundred stale issues, no labels, and no routing. New contributors bounce off the chaos.",
+  "afterState": "Every issue has an accurate label, a priority, and a next-action, applied by an agent that ran once against the backlog and then once per new issue.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-05-20",
+  "lastVerifiedAt": "2026-05-20",
+  "freshnessWindowDays": 90
+}
