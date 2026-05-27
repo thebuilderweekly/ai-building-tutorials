@@ -1,0 +1,23 @@
+{
+  "id": "adversarial-scoping",
+  "title": "Kill a bad product idea before you spend a week building it",
+  "slug": "adversarial-scoping",
+  "pillar": "scoping",
+  "clusterTags": [
+    "scoping",
+    "adversarial-prompts",
+    "prd-review"
+  ],
+  "soulLine": "An agent runs six adversarial critique passes in two minutes and surfaces objections a solo founder never asks themselves, where a human review panel takes three days to assemble and half the panel will be polite.",
+  "beforeState": "You have a PRD you're excited about. You start building. Four days in you realize it solves the wrong problem.",
+  "afterState": "Before you write any code, an agent runs six adversarial critiques against the PRD and surfaces the three objections that would have killed the idea on day four.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "anthropic-api"
+  ],
+  "createdAt": "2026-05-27",
+  "lastVerifiedAt": "2026-05-27",
+  "freshnessWindowDays": 90
+}

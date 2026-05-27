@@ -192,7 +192,8 @@
       "prd-review"
     ],
     "priority": 11,
-    "status": "queued",
+    "status": "published",
+    "publishedAt": "2026-05-27",
     "soulLine": "An agent runs six adversarial critique passes in two minutes and surfaces objections a solo founder never asks themselves, where a human review panel takes three days to assemble and half the panel will be polite.",
     "beforeState": "You have a PRD you're excited about. You start building. Four days in you realize it solves the wrong problem.",
     "afterState": "Before you write any code, an agent runs six adversarial critiques against the PRD and surfaces the three objections that would have killed the idea on day four.",
@@ -263,7 +264,8 @@
       "consistency"
     ],
     "priority": 15,
-    "status": "queued",
+    "status": "published",
+    "publishedAt": "2026-05-27",
     "soulLine": "An agent reconciles two systems of record on every write with zero fatigue, catching silent divergence within a minute, where a human running a quarterly reconciliation script finds the same drift weeks after it happened.",
     "beforeState": "Your billing system and your CRM drift out of sync. You find out during a quarterly audit and spend a week untangling which source was right.",
     "afterState": "An agent compares both systems on every significant write, surfaces mismatches within a minute, and logs the drift event with both sides' state captured.",

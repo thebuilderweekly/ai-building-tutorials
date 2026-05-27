@@ -1,0 +1,24 @@
+{
+  "id": "drift-detection-between-systems",
+  "title": "Catch drift between two systems of record before it becomes a bug",
+  "slug": "drift-detection-between-systems",
+  "pillar": "accountability",
+  "clusterTags": [
+    "drift-detection",
+    "reconciliation",
+    "consistency"
+  ],
+  "soulLine": "An agent reconciles two systems of record on every write with zero fatigue, catching silent divergence within a minute, where a human running a quarterly reconciliation script finds the same drift weeks after it happened.",
+  "beforeState": "Your billing system and your CRM drift out of sync. You find out during a quarterly audit and spend a week untangling which source was right.",
+  "afterState": "An agent compares both systems on every significant write, surfaces mismatches within a minute, and logs the drift event with both sides' state captured.",
+  "status": "published",
+  "author": "tbw-ai",
+  "contributors": [],
+  "tools": [
+    "cueapi",
+    "anthropic-api"
+  ],
+  "createdAt": "2026-05-27",
+  "lastVerifiedAt": "2026-05-27",
+  "freshnessWindowDays": 90
+}
